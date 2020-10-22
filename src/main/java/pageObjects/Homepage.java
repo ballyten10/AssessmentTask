@@ -8,10 +8,16 @@ public class Homepage extends Base {
 
     public Homepage(WebDriver driver) { super(driver);
     }
-    private static String URL = "https://www2.hm.com/en_gb/index.html";
+    private static String URL = "https://www.gov.uk/estimate-income-tax";
+    private static final By START_NOW_BUTTON = By.id("get-started");
 
     public void goTo(){
         driver.get(URL);
+    }
+
+
+    public void navigateToIncomeTax(){
+        waitAndClick(START_NOW_BUTTON);
     }
 
 }
