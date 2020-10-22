@@ -11,7 +11,7 @@ public class Incometax extends Base {
     public void Incometax(){
         WebElement AmountPaid = this.driver.findElement(By.id("amount"));
         AmountPaid.click();
-        AmountPaid.sendKeys(new CharSequence[]{"1600",Keys.ENTER});
+        AmountPaid.sendKeys(new CharSequence[]{"160",Keys.ENTER});
         WebElement Paid = this.driver.findElement(By.id("period"));
         Paid.click();
         Paid.sendKeys(new CharSequence[]{"Hourly",Keys.ENTER});
