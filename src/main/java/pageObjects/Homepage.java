@@ -8,7 +8,7 @@ public class Homepage extends Base {
 
     public Homepage(WebDriver driver) { super(driver);
     }
-    private static String URL = "https://www.gov.uk/estimate-income-tax";
+    private static String URL = "https://www.tax.service.gov.uk/estimate-paye-take-home-pay/your-pay";
     private static final By START_NOW_BUTTON = By.id("get-started");
 
     public void goTo(){

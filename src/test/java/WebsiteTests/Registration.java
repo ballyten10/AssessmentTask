@@ -21,22 +21,10 @@ public class Registration {
     }
 
     @Test
-    public void tax(){
-        homepage.goTo();
-        this.incometax.Incometax();
-    }
-
-    @Test
     public void Paid(){
         homepage.goTo();
         this.incometax.Incometax();
-
-
     }
-
-
-
-
 }
 
 

@@ -9,8 +9,6 @@ public class Incometax extends Base {
     public  Incometax (WebDriver driver){ super(driver);}
 
     public void Incometax(){
-        WebElement StartNow = this.driver.findElement(By.id("get-started"));
-        StartNow.click();
         WebElement AmountPaid = this.driver.findElement(By.id("amount"));
         AmountPaid.click();
         AmountPaid.sendKeys(new CharSequence[]{"1600",Keys.ENTER});
@@ -33,6 +31,10 @@ public class Incometax extends Base {
         TaxCode.sendKeys(new CharSequence[]{"1250L",Keys.ENTER});
         WebElement ContinueBBB = this.driver.findElement(By.id("button-continue"));
         ContinueBBB.click();
+        WebElement ScottishTax = this.driver.findElement(By.id("payScottishRate-2"));
+        ScottishTax.sendKeys(new CharSequence[]{"No",Keys.ENTER});
+        WebElement ContinueBBBB = this.driver.findElement(By.id("button-continue"));
+        ContinueBBBB.click();
         WebElement GetResults = this.driver.findElement(By.id("button-get-results"));
         GetResults.click();
 
